@@ -1,0 +1,1 @@
+This repository contains an R implementation of the 2-D Rayleigh ARMA model (Palm, B.G., Bayer, F.M. and Cintra, R.J., 2022. 2-D Rayleigh autoregressive moving average model for SAR image modeling. Computational Statistics & Data Analysis, 171, p.107453).
