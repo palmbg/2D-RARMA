@@ -160,7 +160,7 @@ fit.2drarma = function (y, ar = NA, ma = NA)
           {
             dsum.phi[j,] = theta[j] * deta.dphi[i-ma,]
           }
-          deta.dphi[i,] = P1[i,] - apply(dsum.phi,2,mean)
+          deta.dphi[i,] = P1[i,] - apply(dsum.phi,2,sum)
         }
       }
       
@@ -192,7 +192,7 @@ fit.2drarma = function (y, ar = NA, ma = NA)
             {
               dsum.theta[j,] = theta[j] * deta.dtheta[i-ma,]
             }
-            deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,mean)
+            deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,sum)
           }
         }
       rR = deta.dtheta[-m,]
@@ -296,7 +296,7 @@ fit.2drarma = function (y, ar = NA, ma = NA)
         {
           dsum.phi[j,] = theta[j] * deta.dphi[i-ma,]
         }
-        deta.dphi[i,] = P1[i,] - apply(dsum.phi,2,mean)
+        deta.dphi[i,] = P1[i,] - apply(dsum.phi,2,sum)
       }
     }
     
@@ -328,7 +328,7 @@ fit.2drarma = function (y, ar = NA, ma = NA)
         {
           dsum.theta[j,] = theta[j] * deta.dtheta[i-ma,]
         }
-        deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,mean)
+        deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,sum)
       }
     }
     rR = deta.dtheta[-m,]
@@ -604,7 +604,7 @@ fit.2drarma = function (y, ar = NA, ma = NA)
             dsum.theta[j,] = theta[j] * deta.dtheta[i-ma,]
           }
           
-          deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,mean)
+          deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,sum)
         }
       }
       rR = deta.dtheta[-m,]
@@ -711,7 +711,7 @@ fit.2drarma = function (y, ar = NA, ma = NA)
         {
           dsum.theta[j,] = theta[j] * deta.dtheta[i-ma,]
         }
-        deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,mean)
+        deta.dtheta[i,] = R[i,] - apply(dsum.theta,2,sum)
       }
     }
     rR = deta.dtheta[-m,]
